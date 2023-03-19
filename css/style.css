@@ -53,7 +53,7 @@ body {
     color: var(--main-bg-color)
 }
 
-.HebergementLien{ /**permet de gerer tout ce qui et en lien avec la balise a**/
+.hebergementLien{ /**permet de gerer tout ce qui et en lien avec la balise a**/
     color:black;
     text-decoration:none;
 
@@ -74,11 +74,11 @@ body {
 }
 
 /****** Hebergements ***********/
-.Hebergements {
+.hebergements {
     width: 65%;
 }
 
-.TexteHebergement{ /**le texte en gras hebergement **/
+.texteHebergement{ /**le texte en gras hebergement **/
 margin-top: -5px;
 margin-bottom:30px;
 font-family: 'Raleway';
@@ -88,41 +88,41 @@ font-size: 22px;
 line-height: 26px;
 }
 
-.Flex{ /** les direction des colonne**/
+.flex{ /** les direction des colonne**/
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
 
 
-.RectangleMarseille{   /**rectangle autour des image**/
+.contenaireHebergementMarseille{   /**rectangle autour des image**/
 
-    width: 250.33px;
-    height: 207.25px;
-    
-    background: #FFFFFF;
+    width:30%;
+    margin-top: 33px;
+
+    background: #ffffff;
     
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
 
 }
 
-.ImgMarseille{     /**les image au dessus de heergement a marseille**/
-    border: 5px solid #FFFFFF;
+.imgMarseille{     /**les image au dessus de heergement a marseille**/
+    
     border-radius: 20px 20px 0px 0px;
     box-sizing: border-box;
 
-    width: 250.33px;
+    width: 100%;
     height: 124px;
 
 }
-.DirectionTexte{ /**la direction du texte en minuscule et majuscule**/
+.directionTexte{ /**la direction du texte en minuscule et majuscule**/
 display: flex;
 margin: 5px;
 flex-direction: row;
 }
 
-.TexteGras{ /**valeur du texte en gras**/
+.texteGras{ /**valeur du texte en gras**/
     width: 220.33px;
     height: 19px;
         
@@ -134,7 +134,7 @@ flex-direction: row;
 
 }
 
-.TextePetit{  /**valeur du texte en petit**/
+.textePetit{  /**valeur du texte en petit**/
     width: 220.33px;
     height: 16px;
     
@@ -146,12 +146,12 @@ flex-direction: row;
 
 }
 
-.Etoile{ /**direction des etoile**/
+.etoile{ /**direction des etoile**/
      margin-left:5px;
 
 }
 
-.AfficherPlus{ /** dirrection afficher plus**/
+.afficherPlus{ /** dirrection afficher plus**/
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -209,58 +209,61 @@ flex-direction: row;
 }
 
 /*activiter a marseille*/
-.ActiviteMarseille{ /**texte activiter a marseille**/
+
+.sectionContenairActiviterMarseille{ /**dans la section contenair gere tout le bloc**/
+    margin: 0px 40px 0px 40px;
+    border-radius: 20px;
+	margin-top:50px ;
+    
+
+}
+
+.contenairAcitviterArticleMarseille{ /**gere les bloc article dans activiter marseille **/
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	
+	border-radius: 20px; 
+	width: 100%;
+	height: 400px ;
+	background: white;
+
+    margin-top: 30px;
+    
+}
+
+.imgActivite{ /** les  image dans activier**/
+	border-radius: 20px 20px 0 0;
+	width: 100%;
+	height:88%;
+	object-fit:cover;
+    
+
+}
+
+.contenairAcitviterMarseille{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    margin-bottom: 50px;
+    
+    gap: 30px;
+    
+}
+
+.texteImg{ /**le texte dans les activite**/
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 19px;
 
-    display: flex;
-    margin-left:30px;
-
-}
-
-.CadreMarseille{ /**flexbox cadre marseille**/
-    display: flex;
-    justify-content:space-evenly;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.ImgActivite{ /** les  image dans activier**/
-    border-radius: 20px 20px 0px 0px;
-    width: 297.5px;
-    height: 380px;   
-    margin-bottom:0px; 
-
-}
-
-.TexteImg{ /**le texte dans les activite**/
-display: flex;
-flex-direction:row ;
-justify-content: space-between;
-
-padding: 20px 19px;
-
-width: 260px;
-height: 25px;
-margin-top:-10px;
-
-background: #ffffff;
-border-radius: 0px 0px 20px 20px;
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 19px;
+    margin-left: 10%;
 
 }
 
 
 /*footer  a verifier code*/
 
-.Footer{
+.footer{
 
     display: flex;
     justify-content:space-around;
