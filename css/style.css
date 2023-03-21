@@ -84,6 +84,8 @@ body {
     color: #0065FC;
   
    border-top: 3px solid;
+   padding-top: 15px;
+   margin-top: 0px;
 
 }
 
@@ -525,21 +527,24 @@ flex-direction: row;
         height: 19px;
     }
 
-    .boutonRecherche{
 
-        width: 20%;
-        border-radius: 15px ;
+    /********bouton rechercher*************/
+    
+    
+    .barRecherche{
 
 
     }
-     .hebergementLien{
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
     
+
+
+
+    .boutonRecherche{
+    
+        width: 20%;
+        border-radius: 15px ;
         
-     }
-    
+    }    
     
     /*****header lien + logo****/
     
@@ -562,14 +567,14 @@ flex-direction: row;
         width: 50%;
         text-align: center;
         
-
     }
     .survolleheader:hover{
      
         border-top:0px;
         text-decoration-line: none;
         border-bottom: 3px solid;
-
+        padding-bottom: 15px;
+        padding-top: 0px;
     }
     
     
@@ -584,7 +589,8 @@ flex-direction: row;
     .footer {
         flex-direction: column;  
         background-color: #F2F2F2; 
-        padding:*** ;  /**a mettre quand j'aurrer fait le header**/
+        padding: 29% ;  /**a mettre quand j'aurrer fait le header**/
+
     }
 
 
