@@ -56,19 +56,21 @@ body {
 .hebergementLien{ /**permet de gerer tout ce qui et en lien avec la balise a**/
     color:black;
     text-decoration:none;
-
+    width: 25%;
 }
 /**header**/
 
+.headerTexteLien{
+    color:black;
+    text-decoration:none;
+    
+
+
+}
+
 .bookiImg{ /**image bookie en haut a droite**/
-display: flex;
-justify-content:flex-end ;
 
 width: 5%;
-
-padding-top:15px;
-
-
 
 }
 
@@ -83,7 +85,7 @@ padding-top:15px;
 
     display: flex;
     justify-content: flex-end;
-    flex-direction: row;
+
     gap: 30px;
     margin-top: 0px;
     
@@ -95,11 +97,6 @@ padding-top:15px;
     line-height: 19px;
     
     text-align: center;
-}
-
-.placementTrouverHebergement{ /**le texte qui permet de trouver un hebergement et celui du dessous **/
-
-
 }
 
 /**bouton**/
@@ -168,9 +165,15 @@ padding-top:15px;
 
 .sectionFiltre{ /**direction des filtre + flexbox**/
 
+ 
+
+}
+
+.sectionBoutonFiltre{
+
     display: flex;
-    flex-direction: row;
-    gap:20px ;
+    flex-wrap: wrap;
+    gap: 30px;
 
 }
 
@@ -183,6 +186,14 @@ padding-top:15px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
 
+    padding: 18px 25px;
+    
+    font-size: 14px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
 
 }
 
@@ -262,8 +273,8 @@ flex-direction: row;
 }
 
 .texteGras{ /**valeur du texte en gras**/
-    width: 220.33px;
-    height: 19px;
+    
+   
         
     font-family: 'Raleway';
     font-style: normal;
@@ -274,8 +285,7 @@ flex-direction: row;
 }
 
 .textePetit{  /**valeur du texte en petit**/
-    width: 220.33px;
-    height: 16px;
+   
     
     font-family: 'Raleway';
     font-style: normal;
@@ -402,7 +412,11 @@ flex-direction: row;
 
 /*footer  a verifier code*/
 
+
+
+
 .footer{
+    width: 100%; 
 
     display: flex;
     justify-content:space-around;
@@ -447,9 +461,107 @@ flex-direction: row;
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+    .container{
+            max-width:767.98px;
+        
+    }
+
+    .bookiImg{
+        width: 25%;
+       margin-left: 50%;
+    }
+    
+/********filtre version mobile***********/
+
+   .sectionFiltre{
+
+
+   }
+
+    .sectionBoutonFiltre{
+
+        flex-direction: row;
+        align-items:  flex-start;
+        gap: 10px;
+        width: 100%;
+
+    }
+
+    .boutonFiltre{
+
+        width: 48%;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+
+    }
+
+    .texteIformation{ /*******texte en bas de la premieres partit*********/
+
+        width: 100%;
+
+    }
+    
+    .survolleheader:hover{
+     
+        
+        text-decoration-line: underline;
+
+    }
+
+    .baliseH1MediaQuarie{
+        
+        width: 335px;
+        height: 52px;
+    }
+
+    .texteMediaQuarie{
+
+        width: 335px;
+        height: 19px;
+    }
+
+    .boutonRecherche{
+
+        width: 20%;
+        border-radius: 15px ;
+
+
+    }
+     .hebergementLien{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    
+        
+     }
+    .headerLien{
+
+        margin-top: 30px;
+        width: 85%;
+
+    }
+    
+
+    .flex{
+    flex-direction: column;
+   }
+   
+    .footer {
+        flex-direction: column;  
+        background-color: #F2F2F2; 
+        padding:*** ;  /**a mettre quand j'aurrer fait le header**/
+    }
+
+
+
 }
+
