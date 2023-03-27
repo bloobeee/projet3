@@ -56,7 +56,7 @@ body {
 .hebergementLien{ /**permet de gerer tout ce qui et en lien avec la balise a**/
     color:black;
     text-decoration:none;
-    width: 25%;
+    
 }
 /**header**/
 
@@ -142,7 +142,11 @@ body {
     
 
 }
+.boutonRecherche i{
 
+display: none;
+
+}
 .boutonRecherche{ /**mondification couleur + contour**/
 
     padding: 15px ;
@@ -406,6 +410,14 @@ flex-direction: row;
     
 }
 
+.lienImgActiviter{
+
+    width: 25%;
+    color:black;
+    text-decoration:none;
+
+}
+
 .texteImg{ /**le texte dans les activite**/
     font-family: 'Raleway';
     font-style: normal;
@@ -424,16 +436,23 @@ flex-direction: row;
 
 
 .footer{
-    width: 100%; 
-
     display: flex;
-    justify-content:space-around;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 30px;
+    padding: 20px;
     background: #F2F2F2;
 }
 
+.footer h3{
+
+    margin: 0;
+}
+
+.directionBlocFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 50;
+    width: 33%;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -475,19 +494,28 @@ flex-direction: row;
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
-    .container{
-            max-width:767.98px;
-        
-    }
-
     
+    .container{
+
+        margin: 0;
+    }
+    
+    .main-container{
+           padding:0;
+    }
+    
+   
 /********filtre version mobile***********/
 
    .sectionFiltre{
 
 
    }
+   .sectionBoutonFiltre i{
 
+    margin-right: 10px;
+
+   }
     .sectionBoutonFiltre{
 
         flex-direction: row;
@@ -538,13 +566,22 @@ flex-direction: row;
     
 
 
-
-    .boutonRecherche{
+    .boutonRecherche i{
+        
+        display: block;
+        color: #FFFFFF;
+    }
     
+    .boutonRecherche{
+        
         width: 20%;
         border-radius: 15px ;
         
     }    
+    .boutonRecherche span{
+
+        display: none;
+    }
     
     /*****header lien + logo****/
     
@@ -557,7 +594,7 @@ flex-direction: row;
 
     }
     .directionHeader{
-
+        
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -577,7 +614,43 @@ flex-direction: row;
         padding-top: 0px;
     }
     
-    
+   
+
+
+
+    /**********hebergement a marseille************/
+
+    .hebergements-and-populaires section{
+
+        background-color:#FFFFFF ;
+
+    }
+
+
+    .contenaireHebergementMarseille{
+
+        width: 100%;
+        margin-top:30px;
+    }
+
+     .flex{
+
+        gap: 0px;
+     }
+
+     .afficherPlus{
+
+        margin-top: 20px;
+
+     }
+
+   
+   /*********Les plus populaire***********/
+   
+   
+    /********activiter a marseille***********/
+
+
     /********footer**********/
     
     
@@ -589,10 +662,14 @@ flex-direction: row;
     .footer {
         flex-direction: column;  
         background-color: #F2F2F2; 
-        padding: 29% ;  /**a mettre quand j'aurrer fait le header**/
+        gap: 50px;
 
     }
 
+    .directionBlocFooter{
+
+        width: 100%;
+    }
 
 
 }
