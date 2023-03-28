@@ -647,9 +647,58 @@ flex-direction: row;
    
    /*********Les plus populaire***********/
    
+
+.hebergements-and-populaires section{
+
+    
+    }
+
+     .populaires-cards{
+        background-color: #f2f2f2;
+        flex-direction: column;
+        width: 100%;
+    
+    }
+
+    
+    .populaires-cards .card{
+
+        width: 100%;
+    }
+     
+     .populaires-title{
+        background-color: #F2F2F2;
+     }
+     .card{
+
+        padding: 0px;
+
+     }
    
     /********activiter a marseille***********/
+   
+    .contenairAcitviterMarseille{
 
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0;
+    }
+    
+    .contenairAcitviterArticleMarseille{
+
+        height: 25%;
+    }
+
+    .lienImgActiviter{
+        width: 100%;
+    }
+
+    .texteImg{
+
+        padding: 20px;
+        margin: 0;
+        
+    }
 
     /********footer**********/
     
