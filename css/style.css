@@ -175,11 +175,10 @@ display: none;
 
  }
 
-.sectionFiltre{ /**direction des filtre + flexbox**/
+ /**direction des filtre + flexbox**/
 
  
 
-}
 
 .sectionBoutonFiltre{
 
@@ -192,6 +191,7 @@ display: none;
 .effetSurvolleFiltre:hover{
 
     background-color:#DEEBFF ;
+   
 }
 .boutonFiltre{ /** contour boutton + background + effet survole **/
     background-color: #ffffff;
@@ -199,7 +199,9 @@ display: none;
     border-radius: 25px;
 
     padding: 18px 25px;
-    
+    display: flex;
+    gap:10px;
+
     font-size: 14px;
     font-family: 'Raleway';
     font-style: normal;
@@ -504,13 +506,14 @@ flex-direction: row;
            padding:0;
     }
     
-   
-/********filtre version mobile***********/
-
    .sectionFiltre{
 
+        margin: 20px;
 
    }
+/********filtre version mobile***********/
+
+
    .sectionBoutonFiltre i{
 
     margin-right: 10px;
@@ -527,12 +530,14 @@ flex-direction: row;
 
     .boutonFiltre{
         
+        padding: 20px 0px;
         width: 48%;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
+        display: block;
 
     }
 
@@ -561,7 +566,7 @@ flex-direction: row;
     
     .barRecherche{
 
-
+        border-right: none;
     }
     
 
@@ -575,7 +580,7 @@ flex-direction: row;
     .boutonRecherche{
         
         width: 20%;
-        border-radius: 15px ;
+        border-radius: 0px 15px 15px 0px;
         
     }    
     .boutonRecherche span{
@@ -623,7 +628,6 @@ flex-direction: row;
     .hebergements-and-populaires section{
 
         background-color:#FFFFFF ;
-
     }
 
 
@@ -648,8 +652,10 @@ flex-direction: row;
    /*********Les plus populaire***********/
    
 
-.hebergements-and-populaires section{
-
+    section.populaires{
+        background-color: #F2F2F2;
+        border-radius: 0px;
+        order: -1;
     
     }
 
@@ -669,11 +675,7 @@ flex-direction: row;
      .populaires-title{
         background-color: #F2F2F2;
      }
-     .card{
 
-        padding: 0px;
-
-     }
    
     /********activiter a marseille***********/
    
@@ -686,13 +688,16 @@ flex-direction: row;
     
     .contenairAcitviterArticleMarseille{
 
-        height: 25%;
+        height: 200px;
     }
 
     .lienImgActiviter{
         width: 100%;
     }
+    .imgActivite{
 
+        height: 70%;
+    }
     .texteImg{
 
         padding: 20px;
