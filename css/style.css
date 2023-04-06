@@ -94,7 +94,7 @@ body {
     display: flex;
  
 
-    gap: 50px;
+    gap: 67px;
     padding:16px 34px;
     
 
@@ -177,7 +177,12 @@ display: none;
 
  /**direction des filtre + flexbox**/
 
- 
+ .directionFiltre{
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+ }
 
 
 .sectionBoutonFiltre{
@@ -513,6 +518,11 @@ flex-direction: row;
    }
 /********filtre version mobile***********/
 
+   .directionFiltre{
+
+    display:block;
+
+   }
 
    .sectionBoutonFiltre i{
 
