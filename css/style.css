@@ -515,9 +515,14 @@ flex-direction: row;
         height: 200px;
     }
 
+    .imgActivite{
+
+        height: 75%;
+
+    }
     .texteImg{
 
-        margin: 0px;
+        margin-top: 5px;
     }
 }
 
