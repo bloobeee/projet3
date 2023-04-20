@@ -604,6 +604,9 @@ flex-direction: row;
     
     .barRecherche{
 
+    
+        padding:0px;
+        border: 1px solid #f2f2f2;
         border-right: none;
     }
     
@@ -617,8 +620,7 @@ flex-direction: row;
     
     .boutonRecherche{
         
-        width: 20%;
-        border-radius: 0px 15px 15px 0px;
+        border-radius: 15px;
         
     }    
     .boutonRecherche span{
