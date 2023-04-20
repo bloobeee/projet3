@@ -511,20 +511,40 @@ flex-direction: row;
         font-size: 13px;
     }
     
-    
+    .sectionContenairActiviterMarseille{
+
+        margin: 0px;
+
+    }
     .contenairAcitviterArticleMarseille {
 
         height: 100%;
     }
 
+    .contenairAcitviterMarseille{
+
+        height: 270px;
+
+    }
+
+    .lienImgActiviter{
+
+        height: 100%;
+
+    }
     .imgActivite{
 
-        height: 100px;
+        height: 200px;
 
     }
     .texteImg{
 
-        margin-top: 5px;
+        margin: 0px;
+        height: 65px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 10px;
     }
 
     .directionFiltre{
