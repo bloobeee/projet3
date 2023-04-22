@@ -394,14 +394,14 @@ flex-direction: row;
 
 /*activiter a marseille*/
 
-.sectionContenairActiviterMarseille{ /**dans la section contenair gere tout le bloc**/
+.sectionContenairActiviteMarseille{ /**dans la section contenair gere tout le bloc**/
  
 	margin-top:50px ;
     
 
 }
 
-.contenairAcitviterArticleMarseille{ /**gere les bloc article dans activiter marseille **/
+.contenairAcitviteArticleMarseille{ /**gere les bloc article dans activiter marseille **/
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	
 	border-radius: 20px; 
@@ -422,7 +422,7 @@ flex-direction: row;
 
 }
 
-.contenairAcitviterMarseille{
+.contenairAcitviteMarseille{
     display: flex;
     justify-content:space-evenly;
     width: 100%;
@@ -432,7 +432,7 @@ flex-direction: row;
     
 }
 
-.lienImgActiviter{
+.lienImgActivite{
 
     width: 25%;
     color:black;
@@ -511,23 +511,23 @@ flex-direction: row;
         font-size: 13px;
     }
     
-    .sectionContenairActiviterMarseille{
+    .sectionContenairActiviteMarseille{
 
         margin: 0px;
 
     }
-    .contenairAcitviterArticleMarseille {
+    .contenairAcitviteArticleMarseille {
 
         height: 100%;
     }
 
-    .contenairAcitviterMarseille{
+    .contenairAcitviteMarseille{
 
         height: 270px;
 
     }
 
-    .lienImgActiviter{
+    .lienImgActivite{
 
         height: 100%;
 
@@ -600,7 +600,7 @@ flex-direction: row;
         align-items:  flex-start;
         gap: 10px;
         width: 100%;
-
+        flex-wrap: wrap;
     }
 
     .boutonFiltre{
@@ -722,7 +722,7 @@ flex-direction: row;
         background-color:#FFFFFF ;
     }
 
-    .sectionContenairActiviterMarseille{
+    .sectionContenairActiviteMarseille{
       
         margin: 0px 30px;
     }
@@ -775,19 +775,20 @@ flex-direction: row;
    
     /********activiter a marseille***********/
    
-    .contenairAcitviterMarseille{
+    .contenairAcitviteMarseille{
 
         flex-direction: column;
         justify-content: flex-start;
         gap: 0;
+        height: 0%;
     }
     
-    .contenairAcitviterArticleMarseille{
+    .contenairAcitviteArticleMarseille{
 
         height: 200px;
     }
 
-    .lienImgActiviter{
+    .lienImgActivite{
         width: 100%;
     }
     .imgActivite{
@@ -796,7 +797,7 @@ flex-direction: row;
     }
     .texteImg{
 
-        padding: 20px;
+        padding: 0px 20px;
         margin: 0;
         
     }
@@ -813,7 +814,7 @@ flex-direction: row;
         flex-direction: column;  
         background-color: #F2F2F2; 
         gap: 50px;
-
+        
     }
 
     .directionBlocFooter{
